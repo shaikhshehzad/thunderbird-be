@@ -6,6 +6,7 @@ const publicPath = path.join(__dirname, "assets");
 
 app.get('/', (req, res) => {
   res.send('<h1>Travel Agency QA1 enviornment is up now </h1>');
+  
 });
 
 app.get('/dummy-assets', (req, res) => {
