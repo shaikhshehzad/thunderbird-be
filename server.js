@@ -13,6 +13,10 @@ app.get('/dummy-assets', (req, res) => {
   res.sendFile(`${publicPath}/dummy.png`);
 });
 
+app.get('*', function(req, res){
+  res.sendFile(`${publicPath}/not-found.html`);
+});
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
